@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.automationpractice.Base.TestListener"/>
+    </listeners>
+    <test name="Niepoprawna rejestracja użytkownika bez podania hasła" preserve-order="true" enabled="true">
+        <classes>
+            <class name="TC01RegistrationFailNoPasswordProvided"></class>
+        </classes>
+    </test>
+    <test name="Dodanie produktu do koszyka" preserve-order="true" enabled="true">
+        <classes>
+            <class name="TC02AddProductToCart"></class>
+        </classes>
+    </test>
+    <test name="Usunięcie produktu z koszyka" preserve-order="true" enabled="true">
+        <classes>
+            <class name="TC03RemoveProductFromCart"></class>
+        </classes>
+    </test>
+    <test name="Zmiana liczby produktów w koszyku" preserve-order="true" enabled="true">
+        <classes>
+            <class name="TC04ChangeNumberOfProductsInCart"></class>
+        </classes>
+    </test>
+    <test name="Złożenie zamówienia z utworzeniem nowego konta, płatność czekiem" preserve-order="true" enabled="true">
+        <classes>
+            <class name="TC05BuyWithCreatingAccountPayByCheck"></class>
+        </classes>
+    </test>
+</suite>
